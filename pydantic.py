@@ -190,7 +190,7 @@ patient_dict = {'name': 'nitish', 'gender': 'male', 'age': 35, 'address': addres
 
 patient1 = Patient(**patient_dict)
 
-temp = patient1.model_dump(include=)
+temp = patient1.model_dump(include=['name','gender'])
 
 print(type(temp))
 
